@@ -1,0 +1,18 @@
+Reset : 커밋을 잘 못 했을때 되돌아 가는 용도
+Merge : 둘 중에 하나만 골라 yes or yes
+
+working directory에서 git add를 하면 staging area 로 이동 된다
+=> 그 후 git commit을 해야 git repository로 이동된다
+
+git log : git을 했던 log를 확인 가능하다
+git log --graph --oneline : 좀 더 예쁘게 표현
+ㄴ Head : 현재의 소스, 마지막 소스
+
+git reset : hard | soft | mixed 가 존재한다
+ㄴ hard는 커밋했던 소스가 완전히 날아간다, 나 말고도 동료의 소스도 모두 날아간다.
+ㄴ 웬만해서는 hard를 사용하지 않는게 제일 낫다
+
+git revert : 소스만 변경되며, history만 변경된다
+ㄴ git reset hard 는 history마저 날라가지만, revert는 history가 남아있는다.
+ㄴ 리비전 아이디를 통해 예전 코드로 되돌아갈 수 있다.
+
