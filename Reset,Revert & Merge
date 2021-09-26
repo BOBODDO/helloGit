@@ -16,3 +16,5 @@ git revert : 소스만 변경되며, history만 변경된다
 ㄴ git reset hard 는 history마저 날라가지만, revert는 history가 남아있는다.
 ㄴ 리비전 아이디를 통해 예전 코드로 되돌아갈 수 있다.
 
+서버(또는 타인)의 소스와 내 소스가 충돌하면 merge를 해야하는 순간이 온다
+ㄴ GIT 렌즈 프로그램에서 알아서 표시해주니까, 편하게 수정 가능하다
