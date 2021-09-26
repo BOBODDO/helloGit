@@ -36,3 +36,15 @@ br1에서 master 브랜치로 코드를 merge 하는 쉬운 방법
 ㄴ git checkout -p br1 '파일이름'
 *원래 파일 이름을 적으면 되는데, 이상하게 한글 이름은 변경사항이 잘 체크가 되지 않는것 같다
 *그래서 그냥 git checkout -p br1 명령어를 통해 br1에서 변경된 모든 파일들의 코드를 merge 했다 (파일이름을 안가져오면 몽땅 가져오게 된다)
+
+이제 br1을 담당하던 담당자가 master의 코드를 다시 가져오기 위해서는, git pull 한번 한 다음에 > git checkout -p master '파일이름' 을 진행하면된다
+
+git pull을 하면 br1,br2등의 브랜치 말고 항상 master 브랜치의 코드만 다운로드 받게 된다.
+그러면 서버의 특정 브랜치만 최신 코드를 가져오는 방법?
+ㄴ 최초 : git checkout -t origin/'브랜치명'
+ㄴ 가져오고 나서 pull 하기 위해서는 : git pull origin '브랜치명'
+
+github에서 같은 readonly > WRITE권한까지 부여하려면 > Collaborator 셋팅에서 한 유저에게 권한을 부여해주면 된다
+
+#3번째 강의 수강 완료
+#조금 쉬었다가 4번째 GIT 강의를 듣자
