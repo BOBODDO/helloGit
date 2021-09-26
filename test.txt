@@ -2,3 +2,6 @@
 
 origin/master : 서버에 존재하는 repository의 root
 바밥바바바바바바바바
+
+
+== 깃허브에서 직접 수정 한 소스입니다.
