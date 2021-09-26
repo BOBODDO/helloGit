@@ -1,0 +1,26 @@
+#Git with GitHub 마지막 총정리 강의
+
+[기본 FLOW]
+0.git config을 통해서 user.name 및 user.email 등의 기본 값을 셋팅한다
+1.git init 을 통해서 .git 폴더 생성 : 로컬 repository 생성
+2.git add --all 을 통해서 working directory > stage 이동
+3.git status 을 통해서 무엇이 달라지는지 확인 가능
+4.git commit 을 통해서 stage 에 있는 파일들을 > master 로 이동
+5.git remote add origin ~~~ : 서버(GITHUB)과의 연결
+5.git push 는 로컬 > 서버, git pull은 서버 > 로컬
+
+*주의 : 최상위 폴더에 .git이 있으면 하위 폴더에 모두 영향을 주므로, 있으면 안된다.
+
+[Branch]
+- Master > testbr, testbr2 브랜치로 분기 시 : Master의 소스들이 그대로 각 브랜치로 연계된다.
+- git checkout 시점으로부터 Master의 a.py와 testbr의 a.py는 다른 파일이 된다.
+- 각각이 Stage와 Repository를 가지고 있다 > 즉, testbr에서 commit을 하면 master 브랜치가 아니라 testbr 브랜치에서 커밋이 된다
+- git push origin '브랜치명' 을 통해서 서버의 각 브랜치에 push가 가능하다
+- branch가 분기된 시점 이후로부터는 Push 시에 꼭 branch를 지정해 줘야 한다.
+- branch의 checkout 하기 전에는 꼭 commit을 해 줘야 한다.
+- git diff testbr : 현재 master branch에 있을 경우, testbr과의 차이(파일의 변경 점)를 알려준다.
+- EX) git checkout -p testbr a.py : testbr branch의 a.py파일의 다른 내용을 현재 branch의 a.py파일로 가져온다.
+- EX) git merge br1 : br1의 소스가 모두 master로, conflict 된 것은 다 알려준다.
+
+#강의 끝
+
