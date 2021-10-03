@@ -15,3 +15,8 @@
 
 2. 터미널에서 명령어를 사용하는 방법
 > 강사님께서 사용하시는 방식.. MAC에 brew를 설치하고 복잡한듯??
+
+### Git Flow를 터미널에서 사용
+1. git flow init
+2. git branch -a
+
